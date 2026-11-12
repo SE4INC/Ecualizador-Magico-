@@ -16,18 +16,13 @@ jobs:
           submodules: recursive
 
       - name: Configure CMake
-        run: cmake -B build -S CRIS-VOX-EQ -DCMAKE_BUILD_TYPE=Release
+        run: cmake -B build -S CRIS-VOX-EQ -DCMAKE_BUILD_TYPE=Release -DCRIS_BUILD_PLUGIN=ON -DCRIS_BUILD_TESTS=OFF
 
       - name: Build VST3
         run: cmake --build build --config Release
-
-      - name: Verificar archivos generados
-        run: dir build /s /b | findstr /i ".vst3"
 
       - name: Upload VST3 Artifact
         uses: actions/upload-artifact@v4
         with:
           name: CRIS-VOX-EQ-VST3
-          path: |
-            build/*/.vst3
-            !build/*/CMakeFiles/*
+          path: build/*/CrisVoxEQ_artefacts/Release/VST3/.vst3
