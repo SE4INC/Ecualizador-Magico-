@@ -1,0 +1,15 @@
+{
+  "product": "CRIS VOX EQ",
+  "version": "1.0.0",
+  "status": "development candidate",
+  "binary_platform": "Linux x86_64",
+  "windows_binary_included": false,
+  "windows_build": "GitHub Actions windows-2022 / MSVC - not executed remotely",
+  "juce": "8.0.13",
+  "tests": {
+    "ctest": "2/2 passed",
+    "pluginval": "1.0.4 strictness 5 SUCCESS",
+    "FL Studio": "not tested"
+  },
+  "assistant": "local spectral heuristics, not trained AI"
+}

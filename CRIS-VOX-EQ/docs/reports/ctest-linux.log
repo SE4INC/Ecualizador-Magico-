@@ -1,0 +1,46 @@
+Start testing: Nov 11 22:28 CET
+----------------------------------------------------------
+1/2 Testing: cris_eq_dsp_tests
+1/2 Test: cris_eq_dsp_tests
+Command: "<workspace>/eq-build/cris_eq_dsp_tests"
+Directory: <workspace>/eq-build
+"cris_eq_dsp_tests" start time: Nov 11 22:28 CET
+Output:
+----------------------------------------------------------
+EQ stereo 44100 Hz / 64 samples: 1.97869 ms per ~1s incl. test sine generation; allocations=0
+EQ stereo 44100 Hz / 128 samples: 1.88223 ms per ~1s incl. test sine generation; allocations=0
+EQ stereo 44100 Hz / 2048 samples: 1.75872 ms per ~1s incl. test sine generation; allocations=0
+EQ stereo 48000 Hz / 64 samples: 2.08394 ms per ~1s incl. test sine generation; allocations=0
+EQ stereo 48000 Hz / 128 samples: 2.03499 ms per ~1s incl. test sine generation; allocations=0
+EQ stereo 48000 Hz / 2048 samples: 1.95464 ms per ~1s incl. test sine generation; allocations=0
+EQ stereo 96000 Hz / 64 samples: 4.27218 ms per ~1s incl. test sine generation; allocations=0
+EQ stereo 96000 Hz / 128 samples: 4.29194 ms per ~1s incl. test sine generation; allocations=0
+EQ stereo 96000 Hz / 2048 samples: 3.95089 ms per ~1s incl. test sine generation; allocations=0
+PASS: filter response, stability, neutral, bypass, matching, FFT, rules, FIFO, presets and allocation checks.
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Passed.
+"cris_eq_dsp_tests" end time: Nov 11 22:28 CET
+"cris_eq_dsp_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: cris_eq_integration_tests
+2/2 Test: cris_eq_integration_tests
+Command: "<workspace>/eq-build/cris_eq_integration_tests"
+Directory: <workspace>/eq-build
+"cris_eq_integration_tests" start time: Nov 11 22:28 CET
+Output:
+----------------------------------------------------------
+Real singing fixture: 1.36025 s, processed with RAP GRAVE; difference energy=460.63
+Assistant: Posible acumulación en graves medios / 280 Hz, -2 dB
+PASS: JUCE presets, actual vocal processing, A/B, state, worker analysis, preview/apply, callback allocations=0 and UI snapshots.
+<end of output>
+Test time =   2.94 sec
+----------------------------------------------------------
+Test Passed.
+"cris_eq_integration_tests" end time: Nov 11 22:28 CET
+"cris_eq_integration_tests" time elapsed: 00:00:02
+----------------------------------------------------------
+
+End testing: Nov 11 22:28 CET
